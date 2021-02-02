@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+    ></script>
+
+    <title>FAQs</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $(".question").css("cursor", "pointer");
+        $(".question").nextUntil("h4").slideToggle(1, "swing");
+        $("h4.question").click(function () {
+          let symbol = $(this).find("span");
+          console.log(symbol);
+          if (symbol.html() == "-") {
+            symbol.html("+");
+          } else {
+            symbol.html("-");
+          }
+          $(this).nextUntil("h4").slideToggle(1000, "swing");
+        });
+        setTimeout(() => {
+          $(".faqs").css("visibility", "visible");
+        }, 2);
+      });
+    </script>
+    <style>
+      .faqs {
+        visibility: hidden;
+        color: green;
+      }
+    </style>
+    <div class="faqs">
+      <h4 class="question">
+        <strong><span>+</span> How long will it take?</strong>
+      </h4>
+      <p>
+        The time taken to capture your venue depends on the number of
+        photographs captured. Each photograph takes approximately 1 minute to
+        complete, and we aim to capture a photo every 2-3m.
+      </p>
+      <p>
+        Most venues up to around 2,500m2 will be able to be captured within a
+        day.
+      </p>
+      <h4 class="question">
+        <strong><span>+</span> How much does it cost? </strong>
+      </h4>
+      <p>Our price includes:</p>
+      <p>Virtual 3D Model of your Venue Hire of the camera and operator.</p>
+      <p>1 year hosting on the Matterport platform.</p>
+      <p>Support in integrating the models into the venue website.</p>
+      <p>
+        The price is bespoke based upon the size and complexity of the venue,
+        please contact us for a quotation. If you can provide us with any
+        existing floor plans you have that will help us get a good feel for your
+        venue.
+      </p>
+      <h4 class="question">
+        <strong><span>+</span> What happens on the day? </strong>
+      </h4>
+      <p>
+        A member of our team will introduce themselves on arrival, and we find
+        it is best to walk through all the areas you want to include within the
+        capture together at the beginning of the day. This is a great
+        opportunity to understand what else you have going on in the building
+        that day, so we can best plan our capture route, it is also a great
+        chance to make sure all of your rooms are looking at their best!
+      </p>
+      <p>
+        Once this has been completed, our team members will get the equipment up
+        and running and start capturing the spaces. The time each room takes to
+        capture depends on the size and complexity of the space, but each room
+        will take between 15min and an hour.
+      </p>
+      <p>
+        Our team members will then work their way along the pre-agreed capture
+        route, ensuring that corridors and common areas between each room is
+        captured too.
+      </p>
+      <p>
+        As we capture more data, we produce a simplified floor plan of the
+        building. We can use this to ensure that we have got everything you
+        need.
+      </p>
+      <p>
+        At the end of the day, our team member will upload all of the raw images
+        to the Matterport cloud platform for processing. Depending on the
+        complexity of the venue this can take from a few hours to a few days to
+        complete.
+      </p>
+      <h4 class="question">
+        <strong><span>+</span> What about COVID-19? </strong>
+      </h4>
+      <p>
+        All 3D capture bookings will adhere to any COVID-19 guidelines that are
+        applicable at the time. The capture process allows for social distancing
+        to be accommodated and minimal interaction with any venue surfaces. A
+        full risk assessment will be provided before the booking that can be
+        discussed and agreed with the relevant stakeholders at the venue.
+      </p>
+      <h4 class="question">
+        <strong
+          ><span>+</span> How Long will it be before we can use the venue model?
+        </strong>
+      </h4>
+      <p>
+        We will always ensure that the raw data is uploaded to the platform on
+        the same day as the capture where possible. It then takes some time for
+        the Matterport platform to process the data and return the model. We
+        then need to ensure that any tweaks that we need to make are done, and
+        we will then send you the model for approval.
+      </p>
+      <p>
+        We aim to have the model with you within 5 working days. If you need it
+        sooner then please let us know before the capture date and we will see
+        what we can do to meet your needs.
+      </p>
+      <h4 class="question">
+        <strong><span>+</span> How do we need to prepare the spaces? </strong>
+      </h4>
+      <p>
+        Very much in the same way you would for any other types of photography.
+        This is your opportunity to show your venue off at its best. Ideally
+        meeting and conferencing spaces should be set up ready for an event,
+        make use of screens and displays to show your logo.
+      </p>
+      <p>
+        The space to be captured needs to be free of people, so empty rooms are
+        best.
+      </p>
+      <p>
+        In order to ensure that we can tie everything together, each photograph
+        must be taken sequentially, ie we can’t do one room then another without
+        capturing the route in-between. Our team can advise on the best order to
+        capture the rooms in, working around other things you might have going
+        on on the day.
+      </p>
+      <h4 class="question">
+        <strong><span>+</span> Can we show different room layouts? </strong>
+      </h4>
+      <p>
+        Absolutely! We can include a virtual Mattertag in any room, from which
+        the person viewing the model can just click a button and jump straight
+        into the room with another setup.
+      </p>
+      <p>
+        Clearly we have to photograph both room setups for this to work, so have
+        a chat to our team and we will work out the best way for us to do this
+        with you.
+      </p>
+      <p>
+        We can add on these alternative room layouts at a later date if you
+        need, so there is no rush to get this done straight away.
+      </p>
+      <h4 class="question">
+        <strong><span>+</span> How can we view the model? </strong>
+      </h4>
+      <p>
+        The model is hosted on the Matterport platform, allowing you and your
+        clients to view it right from your browser, either on your computer or
+        mobile device.
+      </p>
+      <p>
+        We can provide you with a link to imbed it onto your website, or a
+        direct link to the model that you can email straight to your clients.
+      </p>
+      <h4 class="question">
+        <strong><span>+</span> Can we put it on our website? </strong>
+      </h4>
+      <p>
+        Yes! We can provide you with the code that can be really simply embedded
+        on your website, just in the same way a twitter or facebook app might
+        work.
+      </p>
+      <p>
+        We can work with the technical staff that manage your website in order
+        to ensure this process goes smoothly, even providing dummy content for
+        testing prior to agreeing to a contract if you are concerned about how
+        the integration will work.
+      </p>
+      <h4 class="question">
+        <strong
+          ><span>+</span> Are there any limitations on the areas you can
+          capture?
+        </strong>
+      </h4>
+      <p>
+        The models work best for venues that are mainly indoor environments. We
+        can capture outdoor areas as well if required, depending on the space we
+        may be able to include these within the main tour, or we might need to
+        add these on as standalone 360degree photographs.
+      </p>
+      <p>
+        Large empty spaces, such as empty ballrooms etc, are difficult to
+        capture properly but tend to work fine with some furniture, such as
+        tables or chairs in. If you do have any large empty spaces that you need
+        us to capture let us know and we will see what we can do.
+      </p>
+      <h4 class="question">
+        <strong
+          ><span>+</span> Can we add our model to Google Streetview?
+        </strong>
+      </h4>
+      <p>
+        Yes! This is a great way to make your model more visible to a wider
+        audience. There is a small additional fee for this service, and Google’s
+        t&amp;c’s exclude a very limited number of models, so please get in
+        touch with us to find out more!
+      </p>
+      <h4 class="question">
+        <strong
+          ><span>+</span> Can we view our model in Virtual Reality (VR)?
+        </strong>
+      </h4>
+      <p>
+        Of course! If you open the model on your mobile phone, you can touch the
+        Google Cardboard logo (bottom right corner) to launch the VR mode.
+      </p>
+      <p>You will need a google cardboard viewer to place your phone into.</p>
+      <p>
+        This works even better with the Matterport VR app, just follow the links
+        to install it.
+      </p>
+      <p>
+        We can, of course, supply you with some branded Google Cardboard
+        headsets for you to send out to your clients allowing them to virtually
+        work right through your venue!
+      </p>
+      <p>Speak to our team for a cost for this.</p>
+      <h4 class="question">
+        <strong><span>+</span> How do I update my model? </strong>
+      </h4>
+      <p>Up to 28days after the capture date.</p>
+      <p>
+        We will still have the raw data on file, so we may be able to make the
+        changes you need. Please contact us and we will see what we can do.
+        There maybe an additional fee if we need to attend the site again.
+      </p>
+      <p>Later than 28days after the capture date.</p>
+      <p>
+        In line with our data retention policy, we no longer have the raw data
+        required to simply amend the existing model. We have a couple of options
+        here, we can either recapture the entire venue, or we maybe able to just
+        capture the changed areas, and link it into the main model.
+      </p>
+      <p>Contact us and we will see what we can do.</p>
+    </div>
+  </body>
+</html>
